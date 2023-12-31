@@ -14,8 +14,11 @@
     }
 
     .card {
-      text-align: center;
       font-family: 'Lobster', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
     }
 
     .card-heading {
@@ -47,7 +50,7 @@
     }
 
     form {
-      margin-left: 60px;
+      margin-left: 40px;
       text-align: center;
     }
 
@@ -71,7 +74,7 @@
       background: #5c0d7642;
       max-width: 250px;
       max-height: 150px;
-      margin-left: 60px;
+      margin-left: 40px;
       border-radius: 10px;
     }
 
@@ -96,7 +99,7 @@
           <form action="none" id="myForm">
             <label for="fname">Your name</label><br>
             <input type="text" id="fname" maxlength="12" name="fname"><br>
-            <label for="mname">Your partner's name</label><br>
+            <label for="mname">Your partner's name</label>
             <input type="text" id="mname" maxlength="12" name="mname"><br>
             <button type="button" onclick="calcLove()">
               Calculate
