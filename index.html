@@ -96,7 +96,7 @@
           <form action="none" id="myForm">
             <label for="fname">Your name</label><br>
             <input type="text" id="fname" maxlength="12" name="fname"><br>
-            <label for="mname">Your partner's name</label>
+            <label for="mname">Your partner's name</label><br>
             <input type="text" id="mname" maxlength="12" name="mname"><br>
             <button type="button" onclick="calcLove()">
               Calculate
@@ -131,7 +131,7 @@
         } else if (num >= 26 && num <= 50) {
           document.getElementById("print").innerHTML = x + " Dont love " + y + " that much, please give some time to you relationship. " + "<br>" + "Your love percentage is " + "<br>" + Math.round(num) + "%";
         } else if (num <= 25) {
-          document.getElementById("print").innerHTML = x + "I do not see a spark in your love with " + ", and your relationship needs some serious attention. " + "<br>" + "Your love percentage is " + "<br>" + Math.round(num) + "%";
+          document.getElementById("print").innerHTML = x + "I do not see a spark in your love with " + y + ", and your relationship needs some serious attention. " + "<br>" + "Your love percentage is " + "<br>" + Math.round(num) + "%";
         } else {
           document.getElementById("print").innerHTML = x + Math.round(num) + "%";
         }
