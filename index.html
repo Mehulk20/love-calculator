@@ -122,7 +122,17 @@
       x = xCap + xSm;
       y = yCap + ySm;
       var num = Math.random() * 100;
-      document.getElementById("print").innerHTML = x + " + " + y + "<br>" + Math.round(num) + "%";
+      if (num >= 89) {
+        document.getElementById("print").innerHTML = x + " Loves " + y + " very much and cares for you. " + "<br>" + "Your love percentage is " + "<br>" + Math.round(num) + "%";
+      } else if (num <= 88) {
+        document.getElementById("print").innerHTML = x + " Loves " + y + " avrage and cares for you a little less. " + "<br>" + "Your love percentage is " + "<br>" + Math.round(num) + "%";
+      } else if (num <= 50) {
+        document.getElementById("print").innerHTML = x + " Dont love " + y + " that much, please give some time to you relationship. " + "<br>" + "Your love percentage is " + "<br>" + Math.round(num) + "%";
+      } else if (num <= 25) {
+        document.getElementById("print").innerHTML = x + "I do not see a spark in your love with " + ", and your relationship needs some serious attention. " + "<br>" + "Your love percentage is " + "<br>" + Math.round(num) + "%";
+      } else {
+        document.getElementById("print").innerHTML = x + Math.round(num) + "%";
+      }
       document.getElementById("myForm").reset();
     }
   </script>
